@@ -27,6 +27,16 @@ The core implementation is **~1000 lines of Python**.
 - **Conversation management** — session persistence, context compression, and resume support
 - **Skills** — reusable one-command workflows via `SKILL.md` files, built-in and custom
 
+#### Idle Adventure — Buddy 放置冒险小游戏
+
+> 输入 `/buddy ia` 让你的伙伴踏入源树世界！全自动放置冒险，收集奖券，抽取 30 枚传说徽章。
+
+- **放置冒险** — Buddy 自动探索六大区域、战斗怪物、触发随机事件，你只需观看
+- **奖券经济** — 冒险获得奖券，奖券用于扭蛋抽取徽章碎片（单抽 / 十连保底）
+- **30 枚徽章** — 4 个稀有度（普通 / 珍贵 / 稀有 / 传说），集齐可唤醒源树
+- **属性成长** — 徽章提供永久属性加成，让每次冒险更强
+- **终端 TUI** — 全屏固定界面，方向键操作，FC 游戏风格主菜单
+
 ---
 
 ## Requirements

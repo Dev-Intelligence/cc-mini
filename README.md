@@ -7,7 +7,7 @@
 **Agentic** &nbsp;·&nbsp; **Built to Extend** &nbsp;·&nbsp; **From Claude Code**
 <br>
 
-The entire core is `~5000 lines of Python`
+The entire core is `~1000 lines of Python`
 
 </div>
 

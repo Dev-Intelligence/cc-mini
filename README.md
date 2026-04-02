@@ -40,7 +40,7 @@ The entire core is `~1000 lines of Python`
 | Feature | Description | Docs |
 |---------|-------------|------|
 | **Coordinator Mode** | Background workers for parallel research and implementation | [docs &rarr;](docs/coordinator.md) |
-| **Buddy** | Tamagotchi AI pet with personality, stats, and speech bubbles | [docs &rarr;](docs/buddy.md) |
+| **Buddy** | Tamagotchi AI pet with personality, stats, mood, and speech bubbles | [docs &rarr;](docs/buddy.md) |
 | **KAIROS Memory** | Cross-session memory with auto-consolidation | [docs &rarr;](docs/memory.md) |
 | **Skills** | One-command workflows: `/review`, `/commit`, `/test`, `/simplify` | [docs &rarr;](docs/skills.md) |
 | **Sandbox** | Bubblewrap isolation for bash commands | [docs &rarr;](docs/sandbox.md) |
@@ -107,6 +107,11 @@ Hatching your companion...
 ✨ SHINY LEGENDARY DUCK
 Glitch Quack hatched! ★★★★★
 
+> /buddy mood
+Glitch Quack's mood:
+  Happy      ████████████████░░░░  65 (high)
+  Bored      ██████████░░░░░░░░░░  50 (neutral)
+
 > /review
 Running skill: /review…
 ↳ Bash(git diff) … ✓ done
@@ -142,7 +147,8 @@ Coordinator mode adds: `Agent` (spawn worker), `SendMessage` (continue worker), 
 | `/history` | List saved sessions |
 | `/clear` | Clear conversation, start new session |
 | `/skills` | List all available skills |
-| `/buddy` | Companion pet — hatch, pet, stats |
+| `/buddy` | Companion pet — hatch, pet, stats, mood |
+| `/buddy help` | Show all buddy commands and gameplay guide |
 | `/review` | Code review (skill) |
 | `/commit` | Git commit (skill) |
 | `/test` | Run tests (skill) |
